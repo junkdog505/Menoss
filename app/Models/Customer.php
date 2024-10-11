@@ -9,7 +9,7 @@ class Customer extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['firstName', 'lastName', 'birthDate', 'moneySpent', 'anniversary'];
+    protected $fillable = ['firstName', 'lastName', 'birthDate', 'moneySpent', 'anniversary', 'email',];
 
     // Relación uno a muchos con Order
     public function orders()

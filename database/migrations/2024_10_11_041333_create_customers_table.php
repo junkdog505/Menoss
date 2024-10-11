@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('firstName');
             $table->string('lastName');
             $table->date('birthDate');
+            $table->string('email')->unique();
             $table->decimal('moneySpent', 10, 2); 
             $table->date('anniversary')->nullable(); 
             $table->timestamps(); 
