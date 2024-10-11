@@ -15,10 +15,14 @@ return new class extends Migration
             $table->id('customerID'); 
             $table->string('firstName');
             $table->string('lastName');
+            $table->unsignedInteger('dni')->unique();
             $table->date('birthDate');
-            $table->string('email')->unique();
-            $table->decimal('moneySpent', 10, 2); 
+            $table->string('address')->nullable(); 
+            $table->string('phone')->nullable(); 
+            $table->string('photo')->nullable(); 
+            $table->decimal('moneySpent', 10, 2)->nullable();
             $table->date('anniversary')->nullable(); 
+            $table->string('email')->unique(); 
             $table->timestamps(); 
         });
     }

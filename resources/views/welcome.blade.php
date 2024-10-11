@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
-<body class="bg-gray-100">
+@extends('layouts.app')
+
+@section('content')
     <div class="container mx-auto mt-10">
         <h1 class="text-center text-4xl font-bold mb-6">Bienvenido a Menoss</h1>
         
@@ -33,5 +27,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+@endsection

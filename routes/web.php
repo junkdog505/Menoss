@@ -19,6 +19,8 @@ Route::resource('customers', CustomerController::class);
 Route::resource('employees', EmployeeController::class);
 Route::resource('products', ProductController::class);
 Route::resource('orders', OrderController::class);
+
+
 Route::get('/', function () {
     return view('welcome');
 });
